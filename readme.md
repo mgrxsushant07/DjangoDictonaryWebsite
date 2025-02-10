@@ -13,7 +13,7 @@ A simple yet powerful **dictionary website** built with **Django models and temp
 
 1. **Clone the repository**
    ```sh
-   
+git clone https://github.com/mgrxsushant07/DjangoDictonaryWebsite.git
    ```
 
 2. **Create a virtual environment and activate it**
