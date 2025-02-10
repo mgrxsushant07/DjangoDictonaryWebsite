@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{word}} Meaning</title>
+    
+    <link rel="stylesheet" href="{% static 'dictapp/css/meaning.css' %}">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <h1>Meaning</h1>
+        <h2><b>{{word}}</b></h2>
+        
+                
+                <p>Meaning : {{ meaning }}</p>
+                <p>Example : {{ example }}</p>
+                <a href="{% url 'home' %}">Go Back</a>
+            </div>
+        </div>
+</body>
+</html>

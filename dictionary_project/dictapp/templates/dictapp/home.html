@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Website</title>
+    <link rel="stylesheet" href="{% static 'dictapp/css/home.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Explore Dictionary</h1>
+        <ul class="word-list">
+            {% for word in all_words %}
+                <li class="word-item">
+                    <a href="{{word.word}}">{{word.word}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
